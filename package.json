@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A portfolio for github pages",
+  "main": "index.js",
+  "dependencies": {
+    "light-server": "^2.9.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "build-css": "node-sass --include-path scss assets/scss/main.scss assets/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "start": "light-server -w './**/*' -s ./ -p 1234",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio",
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "Mario Lanes",
+  "license": "ISC"
+}
