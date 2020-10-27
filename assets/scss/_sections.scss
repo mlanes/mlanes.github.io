@@ -1,4 +1,10 @@
 section.section {
+  align-items: center;
+  display: flex;
+  min-height: 100vh;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
   .content {
     &:not(:last-child) {
       margin-bottom: 50px;
