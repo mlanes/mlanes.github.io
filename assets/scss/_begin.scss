@@ -1,0 +1,19 @@
+#begin {
+  align-items: center;
+  background-color: #101010;
+  background-image: url(../img/star-bg.svg);
+  background-size: cover;
+  display: flex;
+  height: 500px;
+
+  h1 {
+    color: #fff;
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  #begin {
+    background-attachment: fixed;
+  }
+}
