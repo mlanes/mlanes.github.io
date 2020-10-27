@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +11,57 @@
   <link rel="stylesheet" href="assets/css/main.css">
 
   <!-- scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>            
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+
+  <!-- Font Awesome 6 -->
+  <script src="https://kit.fontawesome.com/fecb9d5717.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+  <nav class="transparent z-depth-0">
+    <a href="#" data-target="slide-out" class="sidenav-trigger right black-text"><i class="fas fa-bars"></i></a>
+    <ul id="slide-out" class="sidenav">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img src="assets/img/octacat.jpg" style="width: 100%;">
+          </div>
+          <a href="#user">
+            <img class="circle" src="assets/img/mlanes-profile.jpg">
+          </a>
+          <a href="#name">
+            <span class="white-text name">Mario Lanes</span>
+          </a>
+          <a href="mailto:mario.lanesjr@gmail.com">
+            <span class="white-text email">mario.lanesjr@gmail.com</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <a class="waves-effect" href="https://github.com/mlanes/" target="_blank">
+          <i class="fab fa-github-alt"></i>Github
+        </a>
+      </li>
+      <li>
+        <a class="waves-effect" href="https://www.linkedin.com/in/mariolanes/" target="_blank">
+          <i class="fab fa-linkedin"></i>LinkedIn
+        </a>
+      </li>
+      <li>
+        <div class="divider"></div>
+      </li>
+      <li><a class="subheader">Menu</a></li>
+      <li><a class="waves-effect" href="#!">About Me</a></li>
+      <li><a class="waves-effect" href="#!">Experience</a></li>
+      <li><a class="waves-effect" href="#!">Education</a></li>
+      <li><a class="waves-effect" href="#!">Skills</a></li>
+      <li><a class="waves-effect" href="#!">Interests</a></li>
+      <li><a class="waves-effect" href="#!">Awards</a></li>
+    </ul>
+  </nav>
 
 </body>
+
 </html>
