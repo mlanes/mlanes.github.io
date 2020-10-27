@@ -11,7 +11,7 @@
     "nodemon": "^2.0.6"
   },
   "scripts": {
-    "build-css": "node-sass --include-path scss assets/scss/main.scss assets/css/main.css",
+    "build-css": "node-sass --include-path scss assets/scss/main.scss assets/css/main.css --output-style compressed",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
     "start": "light-server -w './**/*' -s ./ -p 1234",
     "test": "echo \"Error: no test specified\" && exit 1"
