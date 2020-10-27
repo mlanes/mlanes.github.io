@@ -68,7 +68,9 @@ header > nav {
 
 @media (min-width: 992px) {
   #begin {
-    background-attachment: fixed; } }
+    background-attachment: fixed; }
+    #begin h1 {
+      font-size: 96px; } }
 
 main,
 footer {
