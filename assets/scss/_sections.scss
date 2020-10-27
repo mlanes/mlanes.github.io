@@ -8,9 +8,22 @@ section.section {
       li {
         display: inline-block;
         margin-right: 14px;
+        margin-bottom: 18px;
 
         i[class*="fa-"] {
           font-size: 45px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  section.section {
+    .content {
+      ul.dev-icons {
+        li {
+          margin-bottom: 0;
         }
       }
     }
