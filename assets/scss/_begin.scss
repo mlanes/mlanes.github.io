@@ -4,20 +4,70 @@
   background-image: url(../img/star-bg.svg);
   background-size: cover;
   display: flex;
-  height: 500px;
+  height: 100vh;
+  padding-left: 0;
+  text-align: center;
 
-  h1 {
-    color: #fff;
-    text-align: center;
+  .social-media {
+    margin-top: 15px;
+
+    a.social-links {
+      $space: 15px;
+
+      &:first-child {
+        margin-right: $space;
+      }
+
+      &:last-child {
+        margin-left: $space;
+      }
+
+      &:not(:first-child):not(:last-child) {
+        margin: 0 $space;
+      }
+
+      i[class*="fa-"] {
+        font-size: 35px;
+      }
+    }
+  }
+
+  .clouds {
+    display: block;
+    height: 135px;
+    position: absolute;
+    overflow: hidden;
+    top: 87vh;
+
+    img {
+      width: 100%;
+    }
   }
 }
 
 @media (min-width: 992px) {
   #begin {
     background-attachment: fixed;
+    padding-left: 200px;
 
-    h1 { 
-      font-size: 96px;
+    .social-media {
+      a.social-links {
+        opacity: .5;
+        transition: .5s opacity;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        i[class*="fa-"] {
+          font-size: 45px;
+        }
+      }
+
+    }
+
+    .clouds {
+      display: none;
     }
   }
 }
