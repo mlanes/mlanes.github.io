@@ -1,0 +1,18 @@
+section.section {
+  .content {
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+
+    ul.dev-icons {
+      li {
+        display: inline-block;
+        margin-right: 14px;
+
+        i[class*="fa-"] {
+          font-size: 45px;
+        }
+      }
+    }
+  }
+}
