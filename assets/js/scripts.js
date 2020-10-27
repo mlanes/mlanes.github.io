@@ -1,8 +1,6 @@
 $(document).ready(function () {
   // Menu Mobile Initialization
   $('.sidenav').sidenav();
-  // Paralax Initialization
-  // $('.parallax').parallax();
 
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function (event) {
     if (this.hash !== "") {
