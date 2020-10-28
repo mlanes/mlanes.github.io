@@ -27,6 +27,24 @@ footer {
     border-top-right-radius: 15px;
     width: $largeSideNavDesktop;
 
+    span.subheader {
+      padding: 0 32px;
+    }
+  
+    li>a {
+  
+      &>i[class*="fa-"],
+      &>span[class*="fa-"] {
+        color: rgba(0, 0, 0, 0.54);
+        float: left;
+        font-size: 20px;
+        height: 48px;
+        line-height: 48px;
+        margin: 0 32px 0 0;
+        width: 24px;
+      }
+    }
+
     .user-view {
       text-align: center;
 
