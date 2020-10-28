@@ -7,9 +7,26 @@ header {
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
 
-      i.fas {
+      span[class*="fa-"] {
         padding: 0 15px;
       }
+    }
+  }
+
+  .sidenav {
+    span.subheader {
+      padding: 0 32px;
+    }
+
+    li>a>span>i[class*="fa-"],
+    li>a>span[class*="fa-"] {
+      color: rgba(0, 0, 0, 0.54);
+      float: left;
+      font-size: 20px;
+      height: 48px;
+      line-height: 48px;
+      margin: 0 32px 0 0;
+      width: 24px;
     }
   }
 }

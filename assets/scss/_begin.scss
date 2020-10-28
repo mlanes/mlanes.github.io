@@ -26,7 +26,8 @@
         margin: 0 $space;
       }
 
-      i[class*="fa-"] {
+      i[class*="fa-"],
+      span[class*="fa-"] {
         font-size: 35px;
       }
     }
