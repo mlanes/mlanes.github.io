@@ -55,10 +55,12 @@ $(document).ready(function () {
   // Method back to top
   buttonRocket.click(function (event) {
     event.preventDefault();
-    buttonRocket.addClass('toInfinityAndBeyond');
-
-    $('html, body').animate({ scrollTop: 0 }, 800, () => {
-      buttonRocket.removeClass('toInfinityAndBeyond');
-    });
+    if ($(window).scrollTop() >= 760) { 
+      buttonRocket.addClass('toInfinityAndBeyond');
+  
+      $('html, body').animate({ scrollTop: 0 }, 800, () => {
+        buttonRocket.removeClass('toInfinityAndBeyond');
+      });
+    }
   });
 });
