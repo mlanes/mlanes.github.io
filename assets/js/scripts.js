@@ -60,6 +60,7 @@ $(document).ready(function () {
   
       $('html, body').animate({ scrollTop: 0 }, 800, () => {
         buttonRocket.removeClass('toInfinityAndBeyond');
+        window.location.hash = 'begin';
       });
     }
   });
