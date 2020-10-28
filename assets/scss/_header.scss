@@ -12,14 +12,17 @@ header {
       }
     }
   }
+}
 
-  .sidenav {
-    span.subheader {
-      padding: 0 32px;
-    }
+.sidenav {
+  span.subheader {
+    padding: 0 32px;
+  }
 
-    li>a>span>i[class*="fa-"],
-    li>a>span[class*="fa-"] {
+  li>a {
+
+    &>i[class*="fa-"],
+    &>span[class*="fa-"] {
       color: rgba(0, 0, 0, 0.54);
       float: left;
       font-size: 20px;
