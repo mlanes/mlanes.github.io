@@ -16,7 +16,8 @@ section.section {
         margin-right: 14px;
         margin-bottom: 18px;
 
-        i[class*="fa-"] {
+        i[class*="fa-"],
+        span[class*="fa-"] {
           font-size: 45px;
         }
       }
