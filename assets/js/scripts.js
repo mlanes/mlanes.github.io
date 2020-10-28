@@ -1,6 +1,9 @@
 $(document).ready(function () {
+  var sidenav = $('.sidenav');
+  var buttonRocket = $('a.button-rocket');
+
   // Menu Mobile Initialization
-  $('.sidenav').sidenav();
+  sidenav.sidenav();
 
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function (event) {
     if (this.hash !== "") {
@@ -21,13 +24,41 @@ $(document).ready(function () {
     }
   });
 
-  // Verifing size of my screen
-  $(window).on('resize', function () {
-    if ($(this).outerWidth() < 992) {
-      // Closes responsive menu when a scroll trigger link is clicked
-      $('.js-scroll-trigger').click(() => {
-        $('.sidenav').sidenav('close');
-      });
-    }
+  // Verifing size position scroll to show or not the Button Rocket when page was load
+  if ($(window).scrollTop() >= 760) {
+    buttonRocket.addClass('visible');
+  }
+
+  // Verifing size of my screen and position scroll
+  $(window)
+    .on('resize', function () {
+      if ($(this).outerWidth() < 992) {
+
+        // Closes responsive menu when a scroll trigger link is clicked
+        $('.js-scroll-trigger').click(() => {
+          sidenav.sidenav('close');
+        });
+      }
+    })
+    .scroll(function (event) {
+      // Get position scroll
+      var scroll = $(this).scrollTop();
+
+      // Show Rocket Button in this proportion
+      if (scroll >= 760) {
+        buttonRocket.addClass('visible');
+      } else {
+        buttonRocket.removeClass('visible');
+      }
+    });
+
+  // Method back to top
+  buttonRocket.click(function (event) {
+    event.preventDefault();
+    buttonRocket.addClass('toInfinityAndBeyond');
+
+    $('html, body').animate({ scrollTop: 0 }, 800, () => {
+      buttonRocket.removeClass('toInfinityAndBeyond');
+    });
   });
 });
