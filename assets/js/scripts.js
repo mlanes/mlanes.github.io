@@ -57,11 +57,7 @@ $(document).ready(function () {
     event.preventDefault();
     if ($(window).scrollTop() >= 760) { 
       buttonRocket.addClass('toInfinityAndBeyond');
-  
-      $('html, body').animate({ scrollTop: 0 }, 800, () => {
-        buttonRocket.removeClass('toInfinityAndBeyond');
-        window.location.hash = 'begin';
-      });
+      $('html, body').animate({ scrollTop: 0 }, 800, () => buttonRocket.removeClass('toInfinityAndBeyond'));
     }
   });
 });
