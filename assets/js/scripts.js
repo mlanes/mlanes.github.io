@@ -2,6 +2,9 @@ $(document).ready(function () {
   const console = Console;
   console.customMessage();
 
+  const darkMode = DarkMode;
+  darkMode.init();
+
   let sidenav = $('.sidenav');
   let buttonRocket = $('a.button-rocket');
 

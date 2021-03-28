@@ -1,0 +1,44 @@
+.dark {
+  body {
+    color: #bebebe;
+
+    h1,
+    h2,
+    h3 {
+      color: #ffffff !important;
+    }
+
+    section.section,
+    .sidenav {
+      background-color: #232323 !important;
+    }
+
+    section.section {
+      span {
+        &.brazil,
+        &.united-kingdom {
+          color: #bebebe !important;
+        }
+      }
+    }
+
+    .sidenav {
+      span.subheader {
+        color: rgba(255, 255, 255, 0.54);
+      }
+
+      li>a {
+        color: rgba(255, 255, 255, 0.87);
+
+        &>i[class*="fa-"],
+        &>span[class*="fa-"] {
+          color: rgba(255, 255, 255, 0.54);
+        }
+      }
+    }
+
+    .divider {
+      background-color: #1c1c1c !important;
+    }
+  }
+}
