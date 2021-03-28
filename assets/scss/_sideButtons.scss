@@ -1,0 +1,40 @@
+.side-buttons {
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 15px;
+}
+
+a {
+  text-align: center;
+
+  &.lamp {
+    background-color: #f8f8f8;
+    border-radius: 50%;
+    color: #ffd200;
+    font-size: 25px;
+    margin-top: 10px;
+    padding: 6px 0;
+  }
+
+  &.button-rocket {
+    cursor: default;
+    opacity: 0;
+    transition: 1s opacity;
+  
+    &.visible {
+      cursor: pointer;
+      opacity: 1;
+    }
+  
+    &.toInfinityAndBeyond {
+      animation: goTop .8s;
+      animation-fill-mode: forwards;
+    }
+  
+    img {
+      width: 50px;
+    }
+  }
+}

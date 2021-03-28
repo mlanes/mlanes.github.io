@@ -36,6 +36,15 @@
       }
     }
 
+    .side-buttons {
+      a {
+        &.lamp {
+          background-color: #1c1c1c;
+          color: #6e8eae;
+        }
+      }
+    }
+
     .divider {
       background-color: #1c1c1c !important;
     }
