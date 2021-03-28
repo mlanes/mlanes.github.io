@@ -215,19 +215,8 @@ a.subheading {
 }
 
 span {
-  &.brazil {
-    background: -webkit-linear-gradient(80deg, #dfd700 20%, #006110 30%, #00046a 70%);
-  }
-
-  &.united-kingdom {
-    background: -webkit-linear-gradient(80deg, #ffffff 10%, #00046a 30%, #d10000 70%);
-    
-  }
-
-  &.brazil, 
-  &.united-kingdom {
+  &.location {
+    color: #0b4075;
     font-size: 25px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 }

@@ -1,4 +1,3 @@
-@import "_variables";
 @import "_darkMode";
 @import "_fonts";
 @import "_header";
@@ -19,7 +18,6 @@ footer {
 }
 
 .sidenav {
-  transition: $bgTransition;
 
   span.subheader {
     padding: 0 32px;

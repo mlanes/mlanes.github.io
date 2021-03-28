@@ -15,9 +15,8 @@
 
     section.section {
       span {
-        &.brazil,
-        &.united-kingdom {
-          color: #bebebe !important;
+        &.location {
+          color: #6e8eae !important;
         }
       }
     }
