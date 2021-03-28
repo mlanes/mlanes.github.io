@@ -68,7 +68,8 @@ footer {
     width: $largeSideNavDesktop;
 
     .user-view {
-      text-align: center;
+      background-color: transparent;
+      justify-content: center;
 
       .user-badge {
         animation-duration: 4s;
