@@ -21,6 +21,25 @@ footer {
     padding: 0 32px;
   }
 
+  .user-view {
+    align-items: center;
+    background-color: #1f4271;
+    display: flex;
+    padding: 16px;
+
+    .profile-information {
+      .name {
+        font-weight: bold;
+        margin: 0;
+        padding: 0 15px;
+      }
+
+      .email {
+        padding: 0;
+      }
+    }
+  }
+
   li>a {
 
     &>i[class*="fa-"],
