@@ -8,17 +8,18 @@
       color: #ffffff !important;
     }
 
-    section.section,
-    .sidenav {
-      background-color: #232323 !important;
-    }
-
     section.section {
+      background-color: #232323 !important;
+
       span {
         &.location {
           color: #6e8eae !important;
         }
       }
+    }
+
+    .sidenav {
+      background-color: #1c1c1c !important;
     }
 
     .sidenav {
